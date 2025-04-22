@@ -1,0 +1,13 @@
+# Preproposal
+
+## What idea(s) do you have for your final project?
+
+I plan to combine this project with a project for my Linear Algebra class (MATH 2101) with Professor Wallace. My idea is to create a Markov chain model of a data set, and ideally expand from there and create a webpage to summarize my results/end product.
+
+## If you plan to collaborate with one or two classmates, what are their names?
+
+I do not plan to collaborate.
+
+## Do you have any questions of your own?
+
+I don't have any questions right now.
