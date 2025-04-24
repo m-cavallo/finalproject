@@ -1,0 +1,39 @@
+# Proposal
+
+## What will (likely) be the title of your project?
+
+Modeling Disease Transmission: Markov Chains and Covid-19 in Philadelphia
+
+## In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
+
+A Markov chain model illustrating the spread of Covid-19 in Philadelphia during the pandemic.
+
+## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
+
+I plan to create a Markov chain model detailing the transmission of Covid-19 for a period of several months during the pandemic in Philadelphia. It will then be able to be applied to predict future transmission. I will use real-world data to gauge the accuracy of my model's predictions. I plan to create visual representations (probably using LaTex) of my model and subsequent analysis. I will then create a webpage (using Flask) to host my model and resulting analysis.
+
+## If planning to combine 1051's final project with another course's final project, with which other course? And which aspect(s) of your proposed project would relate to 1051, and which aspect(s) would relate to the other course?
+
+MATH 2101 (Linear Algebra). The mathematical principles behind the Markov chain relate to linear algebra, while the coding will all be done in Python using skills I learned in 1051. 
+
+## If planning to collaborate with 1 or 2 classmates for the final project, list their names, email addresses, and the names of their assigned TAs below.
+
+I am not planning to collaborate.
+
+## In the world of software, most everything takes longer to implement than you expect. And so it's not uncommon to accomplish less in a fixed amount of time than you hope.
+
+### In a sentence (or list of features), define a GOOD outcome for your final project. I.e., what WILL you accomplish no matter what?
+
+I will create a Markov chain model of the spread of Covid-19 in Philadelphia. I will also create an analysis to some extent expanding on the model, and a web page to host my results.
+
+### In a sentence (or list of features), define a BETTER outcome for your final project. I.e., what do you THINK you can accomplish before the final project's deadline?
+
+A better outcome would be to create my Markov chain model and multiple visualizations expanding further on my findings and their implications, and a more detailed webpage.
+
+### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
+
+A best outcome would be to create a Markov chain model, several in-depth visualizations of the model and further analysis, and a detailed webpage to host these results. 
+
+## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
+
+I will need to familiarize myself with Flask, learn how to create a Markov chain model, learn more about LaTex (I already have some experience but will need to know more), and research the transmission of Covid during the pandemic. I will also need to learn about the mathematical principles behind my model and how to analyze it in a meaningful and accurate way.
