@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 Spread Modeling Project</title>
+</head>
+<body>
+    <h1>Modeling Disease Transmission: Markov Chains and COVID-19 in Philadelphia</h1>
+    <p><strong>By:</strong> Margaret Cavallo</p>
+    <p><strong>Class:</strong> MATH 2101 / CIS 1051</p>
+    <p><strong>Professor:</strong> Dr. Wallace / Dr. Rosen</p>
+
+    <h2>Introduction</h2>
+    <p>This project models the spread of COVID-19 using a SIRD (Susceptible, Infected, Recovered, Deceased) model. Specifically, I created a Markov chain model to illustrate the spread of the disease in the City of Philadelphia from April 2020 to April 2021.</p>
+
+    
+<h2>Markov Chains</h2>
+<p>A Markov chain is a mathematical model that describes a system in discrete time. It defines a fixed number of states within the system and the probability of transitions between states. The probability of transitioning from any given state to any other state cannot be dependent on other states. These transition probabilities can be represented in visualizations such as transition matrices and transition diagrams.</p>
+<p>Markov chains also have associated state vectors, which describe the probability of being in a given state. Multiplying a state vector by the transition matrix yields a new state vector with the probability of being in different states upon the next observation of the system.</p>
+<p>An absorbing state is a state that, once you enter it, you will not enter a different state. This is represented by a 1 on the main diagonal of the transition matrix. A Markov chain with at least one absorbing state is itself described as absorbing.</p>
+<p>A Markov chain is regular if there is a positive integer <i>k</i> that you can raise transition matrix P to so that the resulting matrix has all positive entries. This provides insight into the long-term behavior of the system. If a Markov chain has at least one absorbing state, a cycle, or more than one connected component, then it cannot be classified as regular.
+    
+
+<h2>Methods</h2>
+
+<p>I first used data from OpenDataPhilly detailing COVID-19 positive and negative test results and related deaths within the April 2020 - April 2021 time period. I combined these values with the Philadelphia population during this time and wrote a small program using IDLE to carry out the computation of creating the transition matrix.</p>
+<p>I then installed Flask and used it to create a webpage to host my final results. I also used Overleaf to create a display of the transition matrix. The knowledge upon which I based my analysis is from Dr. Wallace's Linear Algebra textbook.
+
+    <h2>Results</h2>
+
+    <h3> Transition Table:</h3>
+    <img src="{{ url_for('static', filename='transitionTable.jpg') }}" alt="Transition Table:" width="600">
+
+
+
+
+<h3> Transition Matrix:</h3>
+   <img src="{{ url_for('static', filename='transitionMatrix.jpg') }}" alt="Transition Matrix:" width="500">
+
+<h2>Analysis</h2>
+<p>The matrix defines four states: Susceptible, Infected, Recovered, and Deceased. Each entry in the matrix P<i><sub>ij</sub></i> represents the probability of moving from state <i>i</i> to state <i>j</i>. So, for example, 0.0913 can be interpreted as saying that the odds of a susceptible person being infected with COVID-19 during this timeframe were 9.13%. Similarly, according to the matrix, an infected person had a 97.63% chance of recovery and a 2.37% chance of death. Note that the probabilities in each row must sum to 1.
+<p><i>Note: One significant limitation of this model is that there is no consideration for factors that make an individual more or less prone to infection, recovery, and death, such as pre-existing conditions. Thus, actual probabilities are likely to vary according to these factors.</i></p>
+<p>There are two entries of 1 along the main diagonal, representing two absorbing states: Recovered and Deceased. The latter is self-evident; once a person becomes deceased, they will never transition to one of the other states. The former is more so the result of a simplification of this model. That is, this model, for simplicity, presumed that a recovered person will stay recovered within this time frame. Therefore, this is a representation of an absorbing Markov chain. Because it is absorbing, it is therefore not a regular Markov chain. </p>
+<p>Overall, this model is a simplification of the COVID-19 pandemic within a one-year period from 2020 to 2021. As such, it does not consider in detail the effects of developments such as legislation or public health efforts. It is therefore a representation of average behavior for the spread of COVID-19 in Philadelphia during this time.</p> 
+
+     
+    <h2>Sources</h2>
+    <p>Wallace, E. (2024). Linear Algebra By Example: An Active Approach. Springer Nature.
+    <p> Datasets. (n.d.). OpenDataPhilly. https://opendataphilly.org/datasets/
+<p>QuickFacts: Philadelphia city, Pennsylvania. (2024). Census Bureau QuickFacts; United States Census Bureau. https://www.census.gov/quickfacts/fact/table/philadelphiacitypennsylvania/PST040223
+
+‌
+
+‌	
+
+</body>
+</html>
